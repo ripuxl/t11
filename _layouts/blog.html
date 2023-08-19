@@ -50,11 +50,8 @@
           <a href='https://ad1uqnq.blogspot.com' title='ad1'><amp-img src="https://img.uqnq.my.id/ad1.png" width="600" height="600" layout="responsive"></amp-img></a> 
 
           {{ content }}
+                 
           
-          
-          {{ page.title }} - post
-          
-          <p>And</p>
         </div>
       <ul>
         {% assign posts = site.posts | where_exp:"post", "post.url != page.url" | sample:10 %}
